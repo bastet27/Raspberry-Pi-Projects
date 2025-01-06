@@ -50,8 +50,6 @@ I followed the [official MagicMirror installation guide](https://docs.magicmirro
    npm run install-mm
    ```
 
-   > **Note:** This step took a while (about 10 minutes on my RPi3), so I grabbed a coffee and let it finish.
-
 6. **Configuring MagicMirror**  
    I copied the sample configuration file to set up my MagicMirror:
    ```
@@ -64,15 +62,20 @@ I followed the [official MagicMirror installation guide](https://docs.magicmirro
    npm run start
    ```
 
-   Alternatively, for **Server Only** mode, I could have used:
-   ```
-   npm run server
-   ```
+## Modules I Use
+I’ve customized my MagicMirror setup with the following modules:
+- **Clock**: Displays the current time and includes moon phase settings phase percentage, rise, and set.
+- **Weather**: Provides daily weather updates.
+- **Calendar**: Syncs with my iCloud calendar for upcoming events.  
+  I followed the guide from [this forum post](https://forum.magicmirror.builders/topic/5327/sync-private-icloud-calendar-with-magicmirror?page=1) to sync private iCloud calendars with MagicMirror.
+
+## Customizations
+1. **Wallpaper**: I created a custom CSS file (`custom.css`) to add a static wallpaper as the background. The wallpaper is a beautiful image that enhances the overall aesthetic.
+2. **Module Layout**: Arranged the modules to maximize visibility and functionality for my workflow.
+3. **Moon Phase Settings**: Added moon phase display in the clock module, which shows sunrise, sunset, moonrise, and moonset times.
 
 ## Next Steps
-Now that I’ve got the MagicMirror up and running, I’m customizing it with modules to make it truly mine. Some features I’m planning to add include:
-- **Google Calendar Integration**: Syncing my events and reminders.
-- **To-Do List**: Using the `MMM-Todoist` module to keep track of tasks.
-- **Weather Updates**: Adding a weather module for daily forecasts.
+While my MagicMirror is already functional and tailored to my needs, I’m considering adding more modules and features, such as:
+- **To-Do List Integration**: Syncing my tasks with MagicMirror.
 
-This setup is already making my workspace more productive and organized. If you’re interested in building something similar, feel free to ask questions or share your ideas!
+This setup has improved my productivity and brought a modern touch to my workspace. If you’re planning a similar project or have suggestions, feel free to share them!
